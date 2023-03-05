@@ -398,13 +398,13 @@ button {
 }
 
 .doorFrameGoat{
-    background-image: url("src/assets/goat.jpg") !important;
+    background-image: url("/src/assets/goat.jpg") !important;
     /* background-repeat: no-repeat; */
     background-size: contain;
 }
 
 .doorFrameCar{
-    background-image: url("src/assets/car.jpg") !important;
+    background-image: url("/src/assets/car.jpg") !important;
     /* background-repeat: no-repeat; */
     background-size: contain;
 }
