@@ -1,0 +1,23 @@
+{
+  "name": "montyhall",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-dsv": "^3.0.2",
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "gh-pages": "^5.0.0",
+    "rollup-plugin-dsv": "^1.2.0",
+    "svelte": "^3.55.1",
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "d3": "^7.8.2",
+    "layercake": "^7.2.2"
+  }
+}
