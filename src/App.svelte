@@ -210,9 +210,10 @@
     line-height: 1.8em;
   }
   footer {
-    margin: 20px auto;
+    padding: 1.5em;
     text-align: start;
     max-width: 900px;
+    margin-bottom: 30px;
   }
 
   hr {
@@ -240,9 +241,13 @@
 body {
   display: block;
   box-sizing: border-box;
-  margin: 0;
-  width: 100%;
-  height: 3030px;
+  /* margin: 0; */
+  /* width: 100%; */
+  /* height: 3030px; */
+}
+
+:global(#app){
+  padding: 0;
 }
 
 :global(body) {
@@ -253,11 +258,18 @@ body {
     font-size: 18px;
 	}
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 
 /* @media only screen and (max-width: 1400px) */
 
 .chart {
-  padding-top: 30px;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
@@ -275,18 +287,27 @@ body {
 }
 
 header {
-  margin: 30px;
+  margin: 30px 0px;
+  margin-bottom: 10px;
   background-color: #f2eee2;
   color: #9a0000;
-  margin: 50px;
+  padding: 1.5em;
+  /* margin: 50px; */
 }
 .card{
   margin-top: 60px;
 }
 
 main {
-  height: 100vh;
-  width: 100%;
+    text-align: center;
+    padding: 1.5em;
+    padding-top: 0.5em;
+    /* max-width: 240px; */
+    margin: 0 auto;
+  }
+
+#app {
+  padding: 0;
 }
 
 .subtitle {

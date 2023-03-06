@@ -163,8 +163,15 @@ function selectWD(evt) {
     /* border: 2px black solid; */
     margin: 5px auto;
     margin-top: 20px;
-    max-width: 800px;
+    /* max-width: 100%; */
+    /* max-width: 100px; */
   }
+
+  @media screen and (max-width: 600px) {
+  table {
+    font-size: 12px;
+  }
+}
 
 
 

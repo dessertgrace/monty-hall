@@ -78,21 +78,16 @@
     background-color: #9a0000;
     color: white;
     border-radius: 6px;
-    width: 70%;
+    width: 80%;
     /* margin: 0px 30px; */
     /* height: 60px; */
-    min-width: 90px;
+    min-width: 80px;
     justify-self: center;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0px;
-}
-.shape {
-  border: 3px solid #262626;
-  width: 80%;
-  height: 45%;
 }
 
 .probcap {
@@ -106,19 +101,19 @@ h2 {
 .twoCase {
     grid-column: 2 / 4;
     width: 90%;
-    min-width: 230px;
+    min-width: 180px;
     margin: 0 auto;
-    margin-right: 14px;
+    margin-right: 0px;
     justify-self: center;
 }
 .reduced {
     /* grid-column: 3 / 4; */
-    width: 28%;
-    min-width: 90px;
+    width: 33%;
+    min-width: 80px;
     /* min-width: 100px; */
     /* width: 100%; */
     /* margin: 0px 0px; */
-    margin-right: 2%; 
+    margin-right: 0%; 
     justify-self: end; 
     /* transform-origin: left; */
     transition: width 2s;
@@ -134,6 +129,12 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12%;
+}
+
+.shape {
+  border: 3px solid #262626;
+  width: 80%;
+  height: 43%;
 }
 
 .knob {
@@ -169,7 +170,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 0;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
 }
 
 .wrapper {
@@ -204,10 +205,11 @@ button {
 
 .door_outer {
     background-image: none;
+    margin-top: 15px;
     /* height: 130px; */
-    width: 60%;
+    width: 65%;
     max-width: 120px;
-    height: 55vw;
+    height: 40vw;
     max-height: 300px;
     border: 5px solid #61412D;
     position: relative;

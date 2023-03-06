@@ -151,10 +151,11 @@
 
 	.graphText {
 		position: absolute;
-		width: calc(100% - 60px);
-		width: 200px;
+		/* width: calc(100% - 0px); */
+		/* width: 200px; */
+		/* width: 100%; */
 		top: 0px;
-		left: 80px;
+		left: 77px;
 		margin: 0 0;
 	}
 
@@ -164,6 +165,7 @@
 		top: 10px;
 		left: 10px;
 		line-height: 1.5em;
+		width: 95%;
 	}
 
 	.logo {
@@ -182,25 +184,28 @@
 		box-sizing: border-box;
 		vertical-align: baseline;
 		/* display: flex; */
-		width: 360px;
+		width: 100%;
+		max-width: 360px;
 		/* grid-row: 1 / 2; */
 		padding: 70px 5px 5px;
 		border: 1px black solid;
 		background-color: white;
-		height: 300px;
+		height: 238px;
 	}
 
-	.chart, h2, p {
-		width: 100%;
-		max-width: 300px;
-		margin: 10px auto;
+	.chart {
+		width: 90%;
+		/* height: 90% */
+		height: 150px;
+		/* max-width: 90%; */
+		margin: 5px auto;
 		vertical-align: baseline;
 	}
 
 	svg {
 		position: relative;
 		width: 100%;
-		height: 200px;
+		height: 170px;
 		overflow: visible;
 	}
 

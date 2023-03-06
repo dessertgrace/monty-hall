@@ -312,7 +312,7 @@ button {
 .shape {
   border: 3px solid #262626;
   width: 80%;
-  height: 45%;
+  height: 43%;
 }
 
 .knob {
@@ -351,8 +351,9 @@ button {
 }
 
 .wrapper {
-  margin: 50px auto;
+  margin: 40px auto;
   margin-bottom: 5px;
+  width: 100%;
   max-width: 850px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -379,9 +380,9 @@ button {
     background-image: none;
     margin-top: 15px;
     /* height: 130px; */
-    width: 60%;
+    width: 65%;
     max-width: 120px;
-    height: 55vw;
+    height: 40vw;
     max-height: 300px;
     border: 5px solid #61412D;
     position: relative;
@@ -430,7 +431,7 @@ button {
   font-weight: 400;
   color: #ffffff;
   position:relative;
-  width: 87%;
+  width: 80%;
   max-width: 600px;
   margin: 1rem auto;
   align-self: center;
