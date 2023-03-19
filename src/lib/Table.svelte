@@ -1,5 +1,6 @@
 <script>
   let isCorrect = [false,false,false,false,false,false];
+  export let revealedTable = false;
 
 function selectWD(evt) {
     const choice = String(evt.target.value).toUpperCase();
@@ -9,6 +10,9 @@ function selectWD(evt) {
       isCorrect[idN] = true;
     } else {
       isCorrect[idN] = false;
+    }
+    if (isCorrect[0] && isCorrect[1] &&  isCorrect[2] && isCorrect[3] && isCorrect[4] && isCorrect[5] ) {
+      revealedTable = true;
     }
   }
 
@@ -21,9 +25,13 @@ function selectWD(evt) {
     } else {
       isCorrect[idN] = false;
     }
+    if (isCorrect[0] && isCorrect[1] &&  isCorrect[2] && isCorrect[3] && isCorrect[4] && isCorrect[5] ) {
+      revealedTable = true;
+    }
   }
 
   function revealAll() {
+    revealedTable = true;
     // select correct value
     const selects = document.querySelectorAll('select');
     selects.forEach( element => {

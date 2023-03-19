@@ -273,7 +273,7 @@
 
 <div class=wrapRest>
     <button class="restartButton" on:click={resetDoors}>
-        restart
+        play again!
     </button>
 </div>
 

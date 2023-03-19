@@ -11,6 +11,8 @@
 
   import { datSwitch, datStay, datSwitchV, datStayV} from './stores.js';
 
+
+  let revealedTable = false;
   let points1 = [];
   let points2 = [];
 
@@ -125,16 +127,16 @@
 <main>
 
   <div class=subtitle>
-    <p> <strong> The Monty Hall problem </strong>has stumped generations.</p>
-    <p> You might know the answer, but do you understand it?</p>
+    <p style="margin:0px auto"> <strong> The Monty Hall problem </strong>has stumped generations.</p>
+    <p style="margin-top:0px">Even if you know the answer, do you understand it?</p>
   </div>
 
   <GameInteractive/>
 
   <!-- <h2> {points.length} </h2> -->
-  <p> For your second choice of door, should you <strong>SWITCH</strong> or <strong>STAY</strong>?</p>
+  <p  style="margin:0px auto"> For your second choice of door, should we <strong>SWITCH</strong> or <strong>STAY</strong>?</p>
   <!-- <p> Which gives a higher change of winning?</p> -->
-  <p> Let's try to determine this emperically. Play the game ten times with each choice.</p>
+  <p  style="margin:0px auto"> Let's try to determine this emperically. Play the game ten times with each choice.</p>
   <!-- <br>  -->
 
   <div class="chart">  
@@ -145,36 +147,46 @@
       <Scatterplot points={points2} datCount={datStayVI} label="STAY"/>
   </div>
 
-  <br>
-  <p> In which case do we have a <strong>higher probability</strong> of winning? </p>
-  <p> What happens if we play the game hundreds of times? </p>
-
-  <button on:click={play1000} class="button1000"> Play another 50x</button>
+  <p  style="margin:0px auto"> In which case do we have a <strong>higher probability</strong> of winning? </p>
+  <p  style="margin:0px auto"> What happens if we play the game hundreds of times? </p>
 
   <br>
-  <p> As you can see, we are twice as likely to win the car if we switch! </p>
-  <p> But why is this true? Probability is just proportions.</p>
+  <button on:click={play1000} class="button1000"> Find out! </button>
 
-  <p> Let's look at every possible scenario, <strong>assuming we choose Door 1 initially</strong>.</p>
   <br>
-
-  <Table/>
-  <!-- <br> -->
-
-  <p> This table shows us that if you switch, you win in 2 of 3 cases, while if you stay, you win in 1 of 3 cases. </p>
-  <p> Since we assume that each case (each row) is equally likely, this means that there is a <strong>2/3 chance</strong> of winning if we switch, and a <strong>1/3 chance</strong> of winning if we stay.</p>
 
   <br>
   <hr>
+
   <br>
-  <p> While the calculation might make sense, </p>
+
+  <br>
+
+  <p> As you might see, we are about twice as likely to win the car if we switch! </p>
+  <p> But why is this true? Probability is just proportions.</p>
+
+  <p  style="margin:0px auto"> Let's look at every possible scenario, <strong>assuming we choose Door 1 initially</strong>.</p>
+  <br>
+
+  <Table bind:revealedTable={revealedTable}/>
+  <!-- <br> -->
+
+  <p class:hideParag={!revealedTable}> This table shows us that if we switch, we win in 2 of 3 cases, while if we stay, we win in 1 of 3 cases. </p>
+  <p class:hideParag={!revealedTable}> Since we assume that each case (each row) is equally likely, this means that there is a <strong>2/3 chance</strong> of winning if we switch, and a <strong>1/3 chance</strong> of winning if we stay.</p>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <p style="margin-bottom:0px"> While the calculation might make sense, </p>
   <h2> how can we develop intuition? </h2>
   <br>
-  <p> This problem has stuck with us for generations because it is so simple yet so easily defies our intuition. </p>
+  <p style="margin:5px auto"> This problem has stuck with us for generations because it is so simple yet so easily defies our intuition. </p>
   <br>
-  <p> We approach this problem with the understanding that each door has an equal chance of concealing the car, and this thinking is hard to break away from. But because a door is opened <strong>NOT randomly</strong> (a goat is revealed), the probabilities must be <strong> updated</strong>. The two remaining doors do not have the same probability of concealing the car.</p>
+  <p style="margin:5px auto"> We approach this problem with the understanding that each door has an equal chance of concealing the car, and this thinking is hard to break away from. But because a door is opened <strong>NOT randomly</strong> (a goat is revealed), the probabilities must be <strong> updated</strong>. The two remaining doors do not have the same probability of concealing the car.</p>
   <br>
-  <p> To understand this problem more intuitively, we can reframe the key question:  </p>
+  <p style="margin:5px auto"> To understand this problem more intuitively, we can reframe the key question:  </p>
   <p><strong><em>Do you want to keep your initial choice, or choose the other two doors?</em></strong></p>
   <p> When a goat is revealed, the 2/3 probability from the other two doors is concentrated on the third door.</p>
 
@@ -206,6 +218,12 @@
 </footer>
 
 <style>
+
+  .hideParag {
+    display:none;
+  }
+
+
   em {
     line-height: 1.8em;
   }
@@ -226,7 +244,7 @@
 
   p {
     max-width: 850px;
-    margin: 0 auto;
+    margin: 1em auto;
   }
 
 .button1000 {
@@ -270,6 +288,7 @@ body {
 
 .chart {
   padding-top: 40px;
+  padding-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
