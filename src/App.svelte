@@ -134,7 +134,7 @@
   <GameInteractive/>
 
   <!-- <h2> {points.length} </h2> -->
-  <p  style="margin:0px auto"> For your second choice of door, should we <strong>SWITCH</strong> or <strong>STAY</strong>?</p>
+  <p  style="margin:0px auto"> For your second choice of door, given the host will always reveal a goat, should we <strong>SWITCH</strong> or <strong>STAY</strong>?</p>
   <!-- <p> Which gives a higher change of winning?</p> -->
   <p  style="margin:0px auto"> Let's try to determine this emperically. Play the game ten times with each choice.</p>
   <!-- <br>  -->
