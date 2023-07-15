@@ -207,6 +207,7 @@
   <br>
   <p> <strong> by Grace Dessert </strong> </p>
   <p> <strong> March 2023 </strong> </p>
+  <p style="margin: 0px">Check out my <a href="https://github.com/dessertgrace/monty-hall">code on GitHub</a>.</p>
   <br>
   <p> Thanks for engaging with this interactive lesson! </p>
   <br>
