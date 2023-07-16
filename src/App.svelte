@@ -207,15 +207,17 @@
   <br>
   <p> <strong> by Grace Dessert </strong> </p>
   <p> <strong> March 2023 </strong> </p>
-  <p style="margin: 0px">Check out my <a href="https://github.com/dessertgrace/monty-hall">code on GitHub</a>.</p>
   <br>
   <p> Thanks for engaging with this interactive lesson! </p>
   <br>
   <p> <strong>Learn more: </strong></p>
     <p>
-      <li> <a href="https://www.youtube.com/watch?v=iSNsgj1OCLA" style="color: #9a0000">The math problem that stumped thousands of mansplainers, Vox</a> </li>
-      <li> <a href="https://www.youtube.com/watch?v=ugbWqWCcxrg" style="color: #9a0000">A more-mathematical explanation using conditional probability and Bayes' Theorem, Numberphile2</a> </li>
+      <li style="margin-left: 0.5em"> <a href="https://www.youtube.com/watch?v=iSNsgj1OCLA" style="color: #9a0000">The math problem that stumped thousands of mansplainers, Vox</a> </li>
+      <li style="margin-left: 0.5em"> <a href="https://www.youtube.com/watch?v=ugbWqWCcxrg" style="color: #9a0000">A more-mathematical explanation using conditional probability and Bayes' Theorem, Numberphile2</a> </li>
     </p>
+    <br>
+  <p>Check out my <a href="https://github.com/dessertgrace/monty-hall">code on GitHub</a>.</p>
+
 </footer>
 
 <style>
